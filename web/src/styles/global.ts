@@ -10,6 +10,10 @@ export const GlobalStyle = createGlobalStyle`
     -moz-osx-font-smoothing: grayscale;
   }
 
+  :root {
+  font-size: 62.5%;
+}
+
   :focus {
     outline: 0;  
   }
