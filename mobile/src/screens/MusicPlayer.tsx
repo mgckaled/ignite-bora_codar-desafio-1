@@ -1,5 +1,6 @@
-import { Box, Center, HStack, Stack } from "native-base"
+import { Box, Center, Stack, VStack } from "native-base"
 
+import { MusicControl } from "../components/MusciControls"
 import { MusicInfo } from "../components/MusicInfo"
 
 export function MusicPlayer() {
@@ -13,9 +14,10 @@ export function MusicPlayer() {
     >
       <Center>
         <Box bg={"backgroundPlayer"} py={8} px={7} w={"5/6"} h={"2/3"}>
-          <HStack>
+          <VStack>
             <MusicInfo />
-          </HStack>
+            <MusicControl />
+          </VStack>
         </Box>
       </Center>
     </Stack>
